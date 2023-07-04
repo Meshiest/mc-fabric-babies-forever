@@ -6,7 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import net.fabricmc.api.ModInitializer;
-
+import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import java.util.Locale;
 
 public final class BabiesForeverMod implements ModInitializer {
@@ -15,6 +15,7 @@ public final class BabiesForeverMod implements ModInitializer {
 
   @Override
   public void onInitialize() {
+    UseEntityCallback.EVENT.register(new InhibitorCallback());
   }
 
   public static boolean isNameBypass(Entity entity) {

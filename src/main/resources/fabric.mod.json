@@ -3,7 +3,7 @@
   "id": "babiesforever",
   "version": "${version}",
   "name": "Babies Forever",
-  "description": "All named babies will stay babies forever!\n${library}",
+  "description": "All named babies will stay babies forever!",
   "authors": [
     "Roundaround"
   ],
